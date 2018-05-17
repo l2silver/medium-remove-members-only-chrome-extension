@@ -1,10 +1,11 @@
 function removeMediumTags(){
+  var icon = "span.svgIcon.svgIcon--star";
   setTimeout(()=>{
-    $("span.svgIcon.svgIcon--lockStory").closest('div.heroGrid-largeCard').remove();
-    $("span.svgIcon.svgIcon--lockStory").closest('div.heroGrid-mediumCard').remove();
-    $("span.svgIcon.svgIcon--lockStory").closest('div.heroGrid-smallCard').remove();
-    $("span.svgIcon.svgIcon--lockStory").closest('div.heroGrid-compact').remove();
-    $("span.svgIcon.svgIcon--lockStory").closest('div.u-borderBox.js-sectionItem').remove();
+    $(icon).closest('div.extremeHero-largeCard').remove();
+    $(icon).closest('div.extremeHero-mediumCard').remove();
+    $(icon).closest('div.extremeHero-smallCard').remove();
+    $(icon).closest('div.extremeHero-compact').remove();
+    $(icon).closest('div.u-borderBox.js-sectionItem').remove();
     removeMediumTags();
   }, 500);
 }
